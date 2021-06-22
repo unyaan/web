@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pongame un 7</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+
+
+
+</head>
+
+<body>
+<script>
+$('body').terminal({
+    hola: function() {
+        this.echo('. Saludos.');
+    },
+    quien: function(eres){
+        this.echo(". Buena pregunta, somos un grupo de hackers de gorro blanco, nos contrataron para encontrar debilidades en el programa, esa es una de las cosas malas del internet, tus datos son accessibles por cualquiera sin la propia seguridad. Quieres saber mas? .");
+    },
+     si: function() {
+        this.echo('. Bueno pues tambien no falta el que hace DDOS, esto es un cyber ataque, tal vez conozcas uno de los cyber ataques mas recientes, Hypixel, un servidor de Minecraft fue atacado hace poco. Estos ataques son muy peligrosos, pero se pueden evitar.');
+    },
+     como: function() {
+        this.echo('. Pues la forma mas simple es no clickear links sospechosos, tener tus datos personales seguros; una buena forma de hacer esto ultimo es con una Virtual Private Network o VPN.');
+    },
+     vpn: function() {
+        this.echo('. Un VPN te protege al cambiar tu direccion IP, tu direccion IP es de vital importancia y hay personas que hasta venden direcciones IP en la deep web. Buen pues eso es todo lo que te puedo contar, tengo que ir a reportar la brecha de seguridad, nos vemos!');
+    },
+     nos: function(vemos) {
+        window.location.href = "index.html";
+    }
+    }
+    , {
+    greetings: 'Hola! Esto es un cyber ataque, hemos descubierto una debilidad en la seguridad del bot'
+});
+</script>
+</body>
+
+</html>
